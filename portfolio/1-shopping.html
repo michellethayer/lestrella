@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lestrella - Visual Designer, Illustrator and Front-end Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Lestrella is a visual designer, illustrator and front-end developer in NYC otherwise known as Michelle Thayer.">
+		<meta name="keywords" content="lestrella, Michelle Thayer, graphic designer, visual designer, web designer, UI designer, front-end developer, NYC, graphic design, visual design, web design, ui design, front-end development">
+		<meta name="author" content="Lestrella">
+		<script type="text/javascript" src="//use.typekit.net/ohh4ivt.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <link href="../css/style.css" rel="stylesheet" media="screen">
+    <link href="../css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="../css/bootstrap-responsive.css" rel="stylesheet" media="screen">
+    <link href="../css/responsive.css" rel="stylesheet" media="screen">
+    <link rel="shortcut icon" href="../img/favicon.ico" />
+		<script src="http://code.jquery.com/jquery.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+		<script src="../js/scripts.js" type="text/javascript"></script>
+	  <script src="../js/modernizr.custom.js"></script>
+		<script src="../js/jquery.1.7.1.min.js" type="text/javascript"></script>
+		<script src="../js/jquery.isotope.js" type="text/javascript"></script> 
+  </head>
+
+	<body class="cbp-spmenu-push info">
+		<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+			<div class="menu-btn">
+			  <button id="showLeft"><img src="../img/nav-tab.png" /></button>
+			</div>
+			<a href="../index.html"><h2>lestrella</h2></a>
+			<a href="../info.html">info</a>
+			<a href="../work.html">work</a>
+			<a href="http://instagram.com/mthayer" target="_blank">Instagratification </a>
+			<a href="https://twitter.com/MichelleThayer" target="_blank">Twitter  </a>
+			<a href="http://www.linkedin.com/in/michellekthayer/" target="_blank">LinkedIn </a>
+			<a href="mailto:mthayer@lestrella.com">Email</a>
+		</nav>
+		
+		<div class="info-container">
+
+			<div class="portfolioContainer2">
+
+				<h4>Shopping in America</h4>
+
+				<div class="portfolioNav">
+					<a href="2-advertising.html"><img src="../img/back-btn.png"></a><a href="19-stiassni.html"><img src="../img/next-btn.png"></a>
+					</div>
+					
+					
+					<img src="../img/portfolio/shopping.jpg" class="portfolio">
+					
+					
+					<div class="row-fluid">
+						<div class="span6">
+							<p>As Americans we are often told what to buy, when to marry and how to live through the shows we watch and magazines we read. There’s nothing wrong with wanting this or that for yourself—the danger lies in pursuing it at the expense of higher things such as love, beauty and truth.
+							</p>
+						</div>
+					</div>
+			
+
+			</div>
+
+		</div>
+		
+		<div id="push"></div>
+
+
+		<div id="footer">
+
+					<p>&copy; LESTRELLA ALL RIGHTS RESERVED 2013</p>
+
+		</div>
+			<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+			<script src="../js/classie.js"></script>
+			<script>
+				var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+					menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+					menuTop = document.getElementById( 'cbp-spmenu-s3' ),
+					menuBottom = document.getElementById( 'cbp-spmenu-s4' ),
+					showLeft = document.getElementById( 'showLeft' ),
+					showRight = document.getElementById( 'showRight' ),
+					showTop = document.getElementById( 'showTop' ),
+					showBottom = document.getElementById( 'showBottom' ),
+					showLeftPush = document.getElementById( 'showLeftPush' ),
+					showRightPush = document.getElementById( 'showRightPush' ),
+					body = document.body;
+
+				showLeft.onclick = function() {
+					classie.toggle( this, 'active' );
+					classie.toggle( menuLeft, 'cbp-spmenu-open' );
+					disableOther( 'showLeft' );
+				};
+				showRight.onclick = function() {
+					classie.toggle( this, 'active' );
+					classie.toggle( menuRight, 'cbp-spmenu-open' );
+					disableOther( 'showRight' );
+				};
+				showTop.onclick = function() {
+					classie.toggle( this, 'active' );
+					classie.toggle( menuTop, 'cbp-spmenu-open' );
+					disableOther( 'showTop' );
+				};
+				showBottom.onclick = function() {
+					classie.toggle( this, 'active' );
+					classie.toggle( menuBottom, 'cbp-spmenu-open' );
+					disableOther( 'showBottom' );
+				};
+				showLeftPush.onclick = function() {
+					classie.toggle( this, 'active' );
+					classie.toggle( body, 'cbp-spmenu-push-toright' );
+					classie.toggle( menuLeft, 'cbp-spmenu-open' );
+					disableOther( 'showLeftPush' );
+				};
+				showRightPush.onclick = function() {
+					classie.toggle( this, 'active' );
+					classie.toggle( body, 'cbp-spmenu-push-toleft' );
+					classie.toggle( menuRight, 'cbp-spmenu-open' );
+					disableOther( 'showRightPush' );
+				};
+
+				function disableOther( button ) {
+					if( button !== 'showLeft' ) {
+						classie.toggle( showLeft, 'disabled' );
+					}
+					if( button !== 'showRight' ) {
+						classie.toggle( showRight, 'disabled' );
+					}
+					if( button !== 'showTop' ) {
+						classie.toggle( showTop, 'disabled' );
+					}
+					if( button !== 'showBottom' ) {
+						classie.toggle( showBottom, 'disabled' );
+					}
+					if( button !== 'showLeftPush' ) {
+						classie.toggle( showLeftPush, 'disabled' );
+					}
+					if( button !== 'showRightPush' ) {
+						classie.toggle( showRightPush, 'disabled' );
+					}
+				}
+			</script>	
+  </body>
+</html>

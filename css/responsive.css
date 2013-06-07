@@ -1,0 +1,54 @@
+@media (min-width: 980px) and (max-width: 1100px) {
+	.thumb {
+		width: 260px;
+		margin: 20px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+	.thumb {
+		width: 260px;
+		margin: 20px;
+	}
+}
+
+@media (max-width: 767px) {
+	.thumb {
+		width: 260px;
+		margin: 20px;
+	}
+	.portfolioContainer2 {
+		margin:0px;
+	}
+}
+
+@media (max-width: 480px) {
+	.portfolioContainer {
+		margin:25px 0 25px 0;
+	}
+	.info-container {
+		margin:25px 0 25px 10px;
+	}
+	.objects {
+		width: 260px;
+		margin: 0px;
+	}
+	.thumb {
+		margin: 25px 0 0 0;
+	}
+	.portfolioContainer2 {
+		margin:0px;
+	}
+	.portfolioContainer2 h4 {
+		text-align:center;
+	}
+	.portfolioContainer2 h5 {
+		text-align:center;
+	}
+	.portfolioNav {
+		width: 260px;
+	  margin-left: auto;
+	  margin-right: auto;
+		text-align:center;
+	}
+}
